@@ -5,10 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using CoffeeShop.Entities;
 using System.Text.Json;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CoffeeShop.Contexts
 {
-    public class CoffeeContext : IContext<CoffeeChecks>
+    public class CoffeeContext : IContext<CoffeeChecks> 
     {
         private string _fileName = "Checks.json"; // Название файла
         private List<CoffeeChecks>? _checks; // список пользователей
@@ -70,7 +71,49 @@ namespace CoffeeShop.Contexts
 
             check.Name = entity.Name;
             check.Price = entity.Price;
-            check.Count = entity.Count;
+            check.CountOfItems = entity.CountOfItems;
+        }
+
+        public void SortByPrice()
+        {
+            for(int i = 0; i < _checks.Count(); i++)
+            {
+                for(int j = 0; j<_checks.Count()-1-i; j++)
+                {
+                    if (_checks[j].Price > _checks[j + 1].Price)
+                    {
+                        CoffeeChecks temp = _checks[j + 1];
+                        _checks[j + 1] = _checks[j];
+                        _checks[j] = temp;
+                    }
+                }
+            }
+        }
+
+        public void SortByDate()
+        {
+            for (int i = 0; i < _checks.Count(); i++)
+            {
+                for (int j = 0; j<_checks.Count()-1-i; j++)
+                {
+                    if (_checks[j].CreateAt > _checks[j + 1].CreateAt)
+                    {
+                        CoffeeChecks temp = _checks[j + 1];
+                        _checks[j + 1] = _checks[j];
+                        _checks[j] = temp;
+                    }
+                }
+            }
+        }
+
+        public double GetAllMoney()
+        {
+            double Sum = 0;
+            foreach(CoffeeChecks check in _checks)
+            {
+                Sum+= check.Price;
+            }
+            return Sum;
         }
     }
 
