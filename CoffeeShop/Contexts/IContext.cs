@@ -7,12 +7,14 @@ using CoffeeShop.Entities;
 
 namespace CoffeeShop.Contexts
 {
-    public interface IContext
+    public interface IContext<T> where T : CoffeeChecks
     {
-        void Create(CoffeeStore entity);
-        void Update(CoffeeStore entity);
-        void Delete(CoffeeStore entity);
-        
-        IEnumerable<CoffeeStore> GetAll();
+        void Create(CoffeeChecks entity);
+        void Update(CoffeeChecks entity);
+        void Delete(Guid id);
+        void Delete(CoffeeChecks entity);
+
+
+        IEnumerable<CoffeeChecks> GetAll();
     }
 }

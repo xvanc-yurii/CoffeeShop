@@ -1,0 +1,15 @@
+D:\STEP\C#.NET\Lessons\CoffeeShop\CoffeeShop\bin\Debug\net7.0\CoffeeShop.exe
+D:\STEP\C#.NET\Lessons\CoffeeShop\CoffeeShop\bin\Debug\net7.0\CoffeeShop.deps.json
+D:\STEP\C#.NET\Lessons\CoffeeShop\CoffeeShop\bin\Debug\net7.0\CoffeeShop.runtimeconfig.json
+D:\STEP\C#.NET\Lessons\CoffeeShop\CoffeeShop\bin\Debug\net7.0\CoffeeShop.dll
+D:\STEP\C#.NET\Lessons\CoffeeShop\CoffeeShop\bin\Debug\net7.0\CoffeeShop.pdb
+D:\STEP\C#.NET\Lessons\CoffeeShop\CoffeeShop\obj\Debug\net7.0\CoffeeShop.csproj.AssemblyReference.cache
+D:\STEP\C#.NET\Lessons\CoffeeShop\CoffeeShop\obj\Debug\net7.0\CoffeeShop.GeneratedMSBuildEditorConfig.editorconfig
+D:\STEP\C#.NET\Lessons\CoffeeShop\CoffeeShop\obj\Debug\net7.0\CoffeeShop.AssemblyInfoInputs.cache
+D:\STEP\C#.NET\Lessons\CoffeeShop\CoffeeShop\obj\Debug\net7.0\CoffeeShop.AssemblyInfo.cs
+D:\STEP\C#.NET\Lessons\CoffeeShop\CoffeeShop\obj\Debug\net7.0\CoffeeShop.csproj.CoreCompileInputs.cache
+D:\STEP\C#.NET\Lessons\CoffeeShop\CoffeeShop\obj\Debug\net7.0\CoffeeShop.dll
+D:\STEP\C#.NET\Lessons\CoffeeShop\CoffeeShop\obj\Debug\net7.0\refint\CoffeeShop.dll
+D:\STEP\C#.NET\Lessons\CoffeeShop\CoffeeShop\obj\Debug\net7.0\CoffeeShop.pdb
+D:\STEP\C#.NET\Lessons\CoffeeShop\CoffeeShop\obj\Debug\net7.0\CoffeeShop.genruntimeconfig.cache
+D:\STEP\C#.NET\Lessons\CoffeeShop\CoffeeShop\obj\Debug\net7.0\ref\CoffeeShop.dll

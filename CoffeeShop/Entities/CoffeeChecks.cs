@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace CoffeeShop.Entities
 {
-    public class CoffeeStore
+    public class CoffeeChecks
     {
+        public Guid Id { get; set; } = Guid.NewGuid();
+        public DateTime CreateAt { get; set; } = DateTime.Now;
         public string? Name { get; set; }
         public double Price { get; set; }
         public int Count { get; set; }
-        public DateTime CreateAt { get; set; }
+
     }
 }
